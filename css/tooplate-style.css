@@ -252,35 +252,46 @@ ul.cd-hero-slider {
 }
 .about-section .grid-about .info p{
 	font-size: 17px;
-	border-bottom: 1px dashed #999999;
     margin-bottom: 25px;
     padding-bottom: 25px;
 }
-/* .info-social{
-	display: flex;
-	justify-content: start;
-}
-*/
+
 .info-social .info-item{
 	width: 50%;
 	display : inline-block;
 	float: right;
 }
 .info-social .info-item h3{
-	font-size: 15px;
+	font-size: 17px;
 	margin-bottom: 20px;
 }
 .info-social .info-item h3 span{
 	font-size: 14px;
+	color: #ff305b;
 }
-.info-social button{
+.info-social .btn{
 	padding: 10px;
 	padding-left: 15px;
 	border-color: #ff305b;
+	color: #222;
+	font-size: 16px;
 	background: #ff305b none repeat scroll 0 0 !important;
 }
-.info-social button:hover{
-	background-color: #eb1111 !important;
+.info-social .btnT{
+	padding: 8px !important;
+	padding-left: 15px !important;
+	border-color: #222 !important;
+	color: #fff !important;
+	font-size: 16px !important;
+	background: #222 none repeat scroll 0 0 !important;
+	border-radius: 3px !important;
+}
+
+
+.info-social .btn:hover{
+	color: #efefef;
+	border: none;
+	background-color: #222 !important;
 }
 .info-social button:nth-of-type(2){
 	margin-left: 15px;
@@ -296,6 +307,9 @@ ul.cd-hero-slider {
 #service .section-heading {
 	margin-bottom: 60px;
 }
+#service .section-heading h4{
+	font-size: 20px;
+}
 
 .service-item {
 	cursor: pointer;
@@ -303,14 +317,20 @@ ul.cd-hero-slider {
 	text-align: center;
 	padding: 30px 20px;
 	transition: all 0.7s;
-	box-shadow: 0px 0px 15px #cdcdcd;
+	box-shadow: -10px 2px 10px #cdcdcd;
+
 }
 
 .service-item:hover {
-	background-color: #ff305b;
+	background-color: #222;
+	transition: 0.5s;
+	box-shadow: 10px 2px 10px #5a5a5a;
+
 }
 .service-item:hover i{
-	color: #fff;
+	color: #ff305b;
+	transition: 0.5s;
+
 }
 
 .service-item h4 {
@@ -333,9 +353,8 @@ ul.cd-hero-slider {
 	font-size: 20px;
 }
 
-
 #what-we-do {
-	background-image: url(../img/what-we-do-bg.png);
+	background-image: url(../img/wha-we-do-bg.png);
 	width: 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -366,8 +385,27 @@ ul.cd-hero-slider {
 	margin-right: 15px;
 	margin-bottom: 15px;
 }
-
-
+.ONED{
+	padding: 10px 20px ;
+	color: #fff;
+	background-color: #333;
+	border-radius: 6px;
+	border: 1px solid #333;
+	font-size: 16px;
+}
+.ONEP{
+	padding: 10px 20px ;
+	background-color: #ff305b;
+	border-radius: 6px;
+	border: 1px solid #ff305b;
+	font-size: 16px;
+}
+.ONEP:hover{
+	color: #fff;
+	background-color: #333;
+	border: 1px solid #333;
+	transition: 0.5s;
+}
 
 /* PORTFOLIO */
 
@@ -393,15 +431,25 @@ ul.cd-hero-slider {
 
 .filter-categories ul li span {
   cursor: pointer;
-  color: #5a5a5a;
+  color: #222;
   display: inline-block;
-  font-size: 14px;
-  text-transform: capitalize;
-  font-weight: 400;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 5px 10px;
+}
+.filter-categories ul li span:hover{
+  cursor: pointer;
+  color: #fff;
+  border-radius: 5px;
+  transition: 0.5s;
+  background-color: #ff305b;
 }
 
 .filter-categories ul li.active span {
   color: #ff305b;
+}
+.filter-categories ul li.active span:hover{
+  color: #fff !important;
 }
 
 .project-item {
@@ -425,6 +473,7 @@ ul.cd-hero-slider {
 	width: 100%;
 	top: 0;
 	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
 	opacity: 0;
 	visibility: hidden;
 	transition: all 0.5s;
@@ -438,7 +487,6 @@ ul.cd-hero-slider {
 	height: 46px;
 	background-color: #fff;
 	line-height: 46px;
-	color: #ff305b;
 	border-radius: 50%;
 	font-size: 18px;
 }
@@ -460,7 +508,7 @@ ul.cd-hero-slider {
 #blog {
 	/* background-image: url(../img/blog-bg.png); */
 	background-color: #fff;
-	color: #000;
+	color: #222;
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
@@ -471,11 +519,12 @@ ul.cd-hero-slider {
 }
 
 #blog .section-heading h4 {
-	color: #000;
+	color: #222;
+	font-size: 17px;
 }
 
 #blog .section-heading .line-dec {
-	background-color: #000;
+	background-color: #222;
 }
 
 #blog .pop, .pop2, .pop3 {
@@ -573,9 +622,9 @@ ul.cd-hero-slider {
 	color: #ff305b;	
 }
 .fact-item .counter {
-	font-size: 26px;
+	font-size: 35px;
 	font-weight: 700;
-	color: #000;
+	color: #222;
 }
 
 .fact-item span {
@@ -665,7 +714,7 @@ ul.cd-hero-slider {
 
 #contact button:hover {
 	color: #fff;
-	background-color: #ff305b;
+	background-color: transparent;
 	transition: all 0.3s;
 }
 
